@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    font-family: "Poppins",sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+a{
+    color:white
+}
+a:active{
+    color: inherit;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+.profile-card{
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(5, 5, 5, 0.25);
+    position: relative;
+}
+.profile-card::before{
+    content: "";
+    position: absolute;
+    height: 33%;
+    width: 100%;
+    background-color:  rgb(34, 112, 227);
+    top: 0;
+    left: 0;
+    border-radius: 24px 24px 0 0;
+}
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color:  rgb(34, 112, 227);
+    padding: 3px;
+    margin-bottom: 10px;
+}
+.profile-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.profile-card .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.text-data .name{
+    font-size: 17px;
+    font-weight: 400px;
+    color: rgb(62, 60, 60);
+}
+.text-data .job{
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(91, 89, 89);
+}
+.contact-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fb, .in, .tw, .yt{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+}
+.fb{
+    background-color: rgb(22, 84, 176);
+    color: white;
+}
+.tw{
+    background-color: rgb(59, 178, 241);
+    color: white;
+}
+.in{
+    background-color: rgb(212, 18, 82);
+    color: white;
+}
+.yt{
+    background-color: red;
+    color: white;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.subscrbe-button, .message-button{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(34, 112, 227);
+    color: white;
+    font-size: 12px;
+    margin: 10px;
+    cursor: pointer;
+}
+.lcs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.like, .comment, .share{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 30px;
+    width: 70px;
+    margin: 10px;
+    box-shadow: 0 3px 10px rgba(5, 5, 5, 0.3);
+    color: rgb(79, 79, 79);
+    font-size: 14px;
+
+}
+span{
+    margin-left: -10px;
+}
