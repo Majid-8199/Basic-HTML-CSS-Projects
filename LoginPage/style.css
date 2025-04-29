@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("bg.jpg");
+    background-size: cover;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 70%;
+    width: 50%;
+    background-color: #86868652;
+    border-radius: 30px;
+    backdrop-filter: blur(2px);
+}
+
+.loginDetails{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginDetails input{
+    width: 100%;
+    height: 30px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.password{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    font-size: small;
+}
+
+.password div{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.password p{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+button{
+    color: white;
+    font-weight: bold;
+    width: 50%;
+    height: 30px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-image: linear-gradient(-40deg, rgb(196, 196, 88), rgb(154, 105, 105));
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    form{
+        width: 90%;
+        height: 50%;
+    }
+
+    .password{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    form{
+        width: 70%;
+        height: 50%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    form{
+        width: 60%;
+        height: 60%;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+    
+}
+
+@media screen and (min-width: 2101px){
+    
+}
